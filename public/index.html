@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>chat</title>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <section class="modal hidden">
+      <div class="flex">
+        <button class="btn-close">⨉</button>
+      </div>
+      <div>
+        <h3>Enter your nickname</h3>
+      </div>
+    <form id="nickv" action="">
+      <input type="text" id="nickname" placeholder="smoking hot" />
+      <button id="close-modal" class="btn send">Submit</button>
+    </form>
+    </section>
+    
+    <div class="overlay hidden"></div>
+    <button class="btn btn-open">Enter your nickname</button>
+
+
+    
+    <section class ="chat hidden">
+      
+      <div class="user-container">
+        <nav class="president-rooms">
+          <h4>AI assistant for all presidents</h4>
+          <h5>you can chat with past and presidents of Ghana</h4>
+          <a href="#" class="president">Kwame Nkrumah (1960-1966)</a>
+          <a href="#" class="president">Joseph Arthur Ankrah (1966-1969)</a>
+          <a href="#" class="president">Akwasi Afrifa (1969-1970)</a>
+          <a href="#" class="president">Nii Amaa Ollennu (1970)</a>
+          <a href="#" class="president">Kofi Abrefa Busia (1969-1972)</a>
+          <a href="#" class="president">Ignatius Kutu Acheampong (1972-1978)</a>
+          <a href="#" class="president">Fred Akuffo (1978-1979)</a>
+          <a href="#" class="president">Jerry John Rawlings (1979-2001)</a>
+          <a href="#" class="president">John Agyekum Kufuor (2001-2009)</a>
+          <a href="#" class="president">John Evans Atta Mills (2009-2012)</a>
+          <a href="#" class="president">John Dramani Mahama (2012-2017)</a>
+          <a href="#" class="president">Nana Akufo-Addo (2017-present)</a>
+        </nav>
+      </div>
+      
+      <div class="messages-container">
+      
+        <ul id="messages"></ul>
+        <form id="form" action="">
+          <input id="input" autocomplete="off"/>
+          <button>Send</button>
+        </form>
+    
+      </div>  
+   
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="sockets.js"></script>
+  </body>
+</html>
